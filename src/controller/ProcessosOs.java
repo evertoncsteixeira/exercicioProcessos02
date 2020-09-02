@@ -51,7 +51,7 @@ public class ProcessosOs {
 		if (os.contains("Windows")) {
 			cmdPid = "TASKKILL /PID";
 		 } else {
-			cmdPid = "KILL";
+			cmdPid = "kill -9";
 		 }
 		
 		int pid = 0;
@@ -78,7 +78,7 @@ public class ProcessosOs {
 		if (os.contains("Windows")) {
 			cmdNome = "TASKKILL /IM";
 		 } else {
-			 cmdNome = "KILL";
+			 cmdNome = "pkill";
 		 }
 		
 	
